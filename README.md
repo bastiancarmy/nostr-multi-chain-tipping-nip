@@ -1,6 +1,6 @@
 # Nostr NIP Proposal: User-Selected Tipping Preferences and Derived Addresses (NIP-XX)
 
-This repository hosts the draft specification and discussion for a proposed Nostr Improvement Proposal (NIP) that introduces chain-agnostic tipping in Nostr. It allows users to select their preferred cryptocurrency chain for tips (e.g., BCH for low-fee on-chain sends, ETH for smart contracts, or BTC via Lightning as default), using derived addresses from their npub public key. This extends NIP-57 (Zaps) without replacing it, addressing LN's complexities while maintaining backwards compatibility.
+This repository hosts the draft specification and discussion for a proposed Nostr Improvement Proposal (NIP) that introduces chain-agnostic tipping in Nostr. It allows users to select their preferred cryptocurrency chain for tips (e.g., BCH for low-fee on-chain sends and smart contracts, covenants and oracles, ETH, or BTC via Lightning as default), using derived addresses from their npub public key. This extends NIP-57 (Zaps) without replacing it, addressing LN's complexities while maintaining backwards compatibility.
 
 ## Motivation
 Nostr's Zaps (NIP-57) enable social tipping but are limited to Bitcoin's Lightning Network (LN), which can involve setup hurdles like channel funding, liquidity management, and routing failures. This NIP proposes a flexible alternative:
