@@ -2,8 +2,10 @@
   "type": "module",
   "dependencies": {
     "@bitauth/libauth": "^3.0.0",
+    "@noble/hashes": "^1.8.0",
     "@noble/secp256k1": "^2.3.0",
     "cashaddrjs": "^0.4.4",
+    "crypto": "^1.0.1",
     "ethereum-cryptography": "^3.2.0"
   }
 }
