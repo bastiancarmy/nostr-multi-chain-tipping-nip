@@ -180,7 +180,7 @@ function nip04Encrypt(privkeyBytes, pubkeyHex, text) {
 
 const RPC_URL = 'http://127.0.0.1:8332';
 const RPC_USER = 'rewt';
-const RPC_PASS = 'EXNRm12jeIBNbUk0euQ+tIOGwUPHVN+X';
+const RPC_PASS = '';
 
 // 1. Generate sender's nsec/npub
 const senderPrivBytes = generateSecretKey();
