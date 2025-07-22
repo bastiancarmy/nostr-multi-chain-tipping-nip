@@ -1,0 +1,21 @@
+{
+  "name": "bch-mainnet-nostr-poc",
+  "version": "1.0.0",
+  "description": "POC for BCH mainnet tipping to Nostr npub",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@bitauth/libauth": "^3.0.0",
+    "@noble/secp256k1": "latest",
+    "@noble/hashes": "latest",
+    "ethereum-cryptography": "latest",
+    "nostr-tools": "^2.15.1",
+    "axios": "latest",
+    "readline-sync": "latest",
+    "ws": "^8.18.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT"
+}
