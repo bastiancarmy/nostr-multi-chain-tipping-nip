@@ -180,21 +180,20 @@ function nip04Encrypt(privkeyBytes, pubkeyHex, text) {
 
 const RPC_URL = 'http://127.0.0.1:8332';
 const RPC_USER = 'rewt';
-const RPC_PASS = '';
+const RPC_PASS = 'EXNRm12jeIBNbUk0euQ+tIOGwUPHVN+X';
 
-// 1. Generate sender's nsec/npub
-const senderPrivBytes = generateSecretKey();
+// 1. Prompt for sender's nsec
+const senderNsec = readlineSync.question('Enter sender nsec: ');
+const senderPrivBytes = nip19.decode(senderNsec).data;
 const senderPub = getPublicKey(senderPrivBytes);
-const senderNsec = nip19.nsecEncode(senderPrivBytes);
 const senderNpub = nip19.npubEncode(senderPub);
-console.log(`Sender nsec: ${senderNsec}`);
 console.log(`Sender npub: ${senderNpub}`);
 
 // Derive sender's BCH address
 const senderCompressedPub = secp256k1.getPublicKey(senderPrivBytes, true);
 const senderPkh = hash160(senderCompressedPub);
 const senderCashAddr = deriveCashAddr(senderPkh);
-console.log(`Fund sender address with at least 2000 sats: ${senderCashAddr}`);
+console.log(`Sender address: ${senderCashAddr}`);
 
 // 2. Prompt for recipient npub
 const recipientNpub = readlineSync.question('Enter recipient npub: ');
