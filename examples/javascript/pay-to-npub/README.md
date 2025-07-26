@@ -69,13 +69,13 @@ This project uses Yarn for package management. Ensure you have Yarn installed (r
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/pay-to-npub.git
+   git clone https://github.com/bastiancarmy/nostr-multi-chain-tipping-nip.git
    cd pay-to-npub
    ```
 
 2. Change into the project directory (important: the script and package.json are here):
    ```
-   cd pay-to-npub
+   cd examples/javascript/pay-to-npub/
    ```
 
 3. Install dependencies using Yarn:
